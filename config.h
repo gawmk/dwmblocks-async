@@ -8,7 +8,7 @@
 #define MAX_BLOCK_OUTPUT_LENGTH 45
 
 // Control whether blocks are clickable.
-#define CLICKABLE_BLOCKS 0
+#define CLICKABLE_BLOCKS 1
 
 // Control whether a leading delimiter should be prepended to the status.
 #define LEADING_DELIMITER 0
@@ -18,10 +18,10 @@
 
 // Define blocks for the status feed as X(icon, cmd, interval, signal).
 #define BLOCKS(X)             \
-    X("", "/home/gawmk/dotfiles/scripts/x11/stats", 5, 0) \
+    X("", "/home/gawmk/dotfiles/scripts/x11/stats", 5, 2) \
     X("", "/home/gawmk/dotfiles/scripts/x11/audio-status", 0, 1) \
-    X("", "/home/gawmk/dotfiles/scripts/x11/network-status", 5, 0) \
-    X("", "/home/gawmk/dotfiles/scripts/x11/battery-status", 60, 0) \
-    X("", "date \"+%_k:%M  %a %b %d\" ", 60, 0)
+    X("", "/home/gawmk/dotfiles/scripts/x11/network-status", 5, 3) \
+    X("", "/home/gawmk/dotfiles/scripts/x11/battery-status", 60, 4) \
+    X("", "date \"+%_k:%M  %a %b %d\" ", 60, 5)
 
 #endif  // CONFIG_H
